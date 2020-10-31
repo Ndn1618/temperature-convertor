@@ -11,16 +11,16 @@
 <body class="convertor-body">
   <h1 class="sr-only">Convert Temperature into Fahrenheit</h1>
   <section class="py-5">
-    <div class="container">
+    <div class="container shadow py-5  bg-light">
       <h2 class="text-center mb-5">Temperatura konvertori</h2>
-      <form class="convertor-form mb-5 d-flex flex-column align-items-center justify-content-center" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="convertor-form d-flex flex-column align-items-center justify-content-center" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form-group d-flex align-items-center mb-4">
-          <label class="h5 text-nowrap mb-0 mr-4" for="celsius-input">Harorat celsiyda (&#8451;)</label>
-          <input class="celsius-input form-control" id="celsius-input" name="celsius-degree" type="number" placeholder="0  &#8451;" required>
+          <label class="h5 text-nowrap mb-0 mr-4" for="celsius-input">Harorat Celsiyda (&#8451;)</label>
+          <input class="celsius-input form-control" id="celsius-input" name="celsius-degree" type="number" placeholder="0  &#8451;" step="any" required>
         </div>
         <div class="form-group d-flex align-items-center mb-4">
-          <label class="h5 text-nowrap mb-0 mr-4" for="fahrenheit-input">Harorat celsiyda (&#8457;)</label>
-          <input class="fahrenheit-input form-control" id="fahrenheit-input" name="fahrenheit-degree" type="number" placeholder="32  &#8457;" required>
+          <label class="h5 text-nowrap mb-0 mr-4" for="fahrenheit-input">Harorat Farengeytda (&#8457;)</label>
+          <input class="fahrenheit-input form-control" id="fahrenheit-input" name="fahrenheit-degree" type="number" placeholder="32  &#8457;" disabled>
         </div>
         <button class="convertor-button btn btn-secondary shadow px-4" type="submit">Hisobla</button>
       </form>

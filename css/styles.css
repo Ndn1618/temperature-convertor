@@ -22,3 +22,7 @@ img {
 h1 {
   font-weight: bold;
 }
+
+.convertor-body {
+  background-color: rgb(160, 129, 160);
+}
