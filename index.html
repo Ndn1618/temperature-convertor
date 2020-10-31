@@ -3,14 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <title>Temperature Convertor</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
- 
-  
+<body class="convertor-body">
+  <h1 class="sr-only">Convert Temperature into Fahrenheit</h1>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Temperatura konvertori</h2>
+      <form class="convertor-form mb-5 d-flex flex-column align-items-center justify-content-center" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form-group d-flex align-items-center mb-4">
+          <label class="h5 text-nowrap mb-0 mr-4" for="celsius-input">Harorat celsiyda (&#8451;)</label>
+          <input class="celsius-input form-control" id="celsius-input" name="celsius-degree" type="number" placeholder="0  &#8451;" required>
+        </div>
+        <div class="form-group d-flex align-items-center mb-4">
+          <label class="h5 text-nowrap mb-0 mr-4" for="fahrenheit-input">Harorat celsiyda (&#8457;)</label>
+          <input class="fahrenheit-input form-control" id="fahrenheit-input" name="fahrenheit-degree" type="number" placeholder="32  &#8457;" required>
+        </div>
+        <button class="convertor-button btn btn-secondary shadow px-4" type="submit">Hisobla</button>
+      </form>
+    </div>
+  </section>
 
 
   <script src="js/jquery-3.5.1.min.js"></script>
