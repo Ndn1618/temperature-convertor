@@ -4,20 +4,23 @@ var HOT_DEGREE = 25;
 
 // Chosing elements
 var convertorForm = document.querySelector('.convertor-form');
-var fahrenheitInput = document.querySelector('.fahrenheit-input');
+var celsiusValueInput = convertorForm.querySelector('.celsius-input');
+var fahrenheitInput = convertorForm.querySelector('.fahrenheit-input');
 var convertorBackground = document.querySelector('.convertor-body');
 
 convertorForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
   // Taking celsius input value
-  var celsiusInput = parseFloat(document.querySelector('.celsius-input').value.trim(), 10);
+  var celsiusInput = parseFloat(celsiusValueInput.value.trim(), 10);
 
   // Calculating into fahrenheit
   if (!isNaN(celsiusInput)) {
+    celsiusValueInput.value = celsiusValueInput.value.trim();
     var fahrenheitDegree = ((celsiusInput * 9/5) + 32).toFixed(1);
     fahrenheitInput.value = fahrenheitDegree;
   } else {
+    celsiusValueInput.value = '';
     fahrenheitInput.value = '';
     alert('Iltimos, faqat son kiriting!');
   }
